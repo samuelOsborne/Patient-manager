@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-import VueSocketIO from "vue-socket.io";
 import router from './router'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import axios from 'axios'
@@ -16,11 +15,6 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.use(VueAxios, axios)
-
-Vue.use(new VueSocketIO({
-  debug: true,
-  connection: 'localhost:5050',
-}))
 
 new Vue({
   router,

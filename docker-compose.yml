@@ -1,0 +1,23 @@
+version: '3'
+services:
+  server:
+    container_name: server
+    restart: always
+    build: .
+    ports:
+      - "5050:5050"
+    links:
+      - mongo
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+    - ./data:/data/db
+    ports:
+    - "27017:27017"
+  client:
+    container_name: client
+    restart: always
+    build: client/
+    ports:
+      - "8080:8080"

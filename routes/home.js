@@ -1,25 +1,21 @@
 const express = require('express')
 const app = express()
+var patient = require('../controller/patient')
 
 /**
- * Retrive list of lobbies and return them
+ * Retrieve all patients
  */
-app.get('/', (req, res) => {
-  sess = req.session
-  username = sess.username
-  console.log("SESSION USERNAME : " + sess.username)
-  res.send({
-    username: username
-  })
-});
+app.get('/', patient.getAllPatients)
 
-app.post('/', (req, res) => {
-  sess = req.session;
-  sess.username = req.body.username
-  console.log("BODY USERNAME : " + req.body.username)
-  console.log("SESSION USERNAME : " + sess.username)
+/**
+ * Create a new patient
+ */
+app.post('/', patient.create)
 
-  res.status(200).send()
-});
+
+/**
+ * Delete an existing patient
+ */
+app.delete('/', patient.delete)
 
 module.exports = app;

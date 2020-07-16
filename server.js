@@ -1,10 +1,11 @@
-const app = require('express')();
-const http = require('http').createServer(app);
-const cors = require('cors');
-const bodyParser = require('body-parser');
-const morgan = require('morgan');
+const app = require('express')()
+const http = require('http').createServer(app)
+const cors = require('cors')
+const bodyParser = require('body-parser')
+const morgan = require('morgan')
 const io = require('socket.io')(http)
-const session = require('express-session')
+
+require('./config/connection')
 
 app.use(morgan('tiny'));
 app.use(cors({
@@ -12,14 +13,8 @@ app.use(cors({
   origin: 'http://localhost:8080'
 }));
 app.use(bodyParser.json());
-app.use(session({
-  secret: 'super secret',
-  resave: false,
-  saveUninitialized: false,
-  cookie : {
-    secure: false
-  }
-}))
+
+
 
 require("./startup/routes")(app);
 
