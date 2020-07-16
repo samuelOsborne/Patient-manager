@@ -1,0 +1,66 @@
+.link-button {
+  text-decoration: none;
+  color: $primary !important;
+  padding: 0;
+}
+
+.link-button:hover {
+  text-decoration: underline;
+  color: $secondary !important;
+}
+
+.align-link-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-primary, .btn-primary:visited, .btn-primary:focus {
+  border-radius: 33px;
+  padding-left: 15px;
+  padding-right: 15px;
+  box-shadow: $bg-shadow-small;
+  background-color: $btn-primary !important;
+  border-color: $btn-primary !important;
+  outline: none !important;
+}
+
+.btn-primary:active {
+  box-shadow: $bg-shadow-small;
+  transform: scale(.98) !important;
+}
+
+.btn-primary:hover {
+  box-shadow: $bg-shadow-small !important;
+  background-color: $btn-primary-hover !important;
+  border-color: $btn-primary-hover !important;
+  outline: none !important;
+  opacity: 0.9;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.btn-secondary, .btn-secondary:visited, .btn-secondary:focus {
+  //border-radius: 15px;
+  box-shadow: $bg-shadow-small;
+  background-color: $btn-secondary !important;
+  border-color: $btn-secondary !important;
+  outline: none !important;
+}
+
+.btn-secondary:active {
+  box-shadow: $bg-shadow-small;
+  transform: scale(.98) !important;
+}
+
+.btn-secondary:hover {
+  box-shadow: $bg-shadow-small !important;
+  background-color: $btn-secondary-hover !important;
+  border-color: $btn-secondary-hover !important;
+  outline: none !important;
+  opacity: 0.9;
+  transition: background-color 0.1s ease-in-out;
+}
+
+.hamburger-bar {
+  background-color: $primary !important;
+}

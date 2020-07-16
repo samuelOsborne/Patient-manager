@@ -1,0 +1,45 @@
+.form {
+	padding: 10px;
+	border-radius: 15px;
+}
+
+.form-control {
+	border: 1px solid $gray-500;
+	border-radius: 0px;
+}
+
+.form-control:focus{
+	border-color: $primary;
+	box-shadow: none;
+}
+
+.success-message {
+	background-color: $green;
+	border-radius: 15px;
+	width: 100%;
+	position: relative;
+	padding: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.error-message {
+	@extend .success-message;
+	background-color: $red;
+}
+
+.form-left {
+  padding-bottom: 10%;
+}
+
+.form-right {
+  padding-bottom: 10%;
+ }
+
+.form-width {
+  @media only screen and (max-width: 320px) {
+    width: 100%;
+    display: block;
+  }
+  width: 50%;
+}

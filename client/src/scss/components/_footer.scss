@@ -1,0 +1,10 @@
+.footer {
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+  background: $footer-background;
+  color: $primary;
+
+  a:hover {
+    color: $accent;
+  }
+}

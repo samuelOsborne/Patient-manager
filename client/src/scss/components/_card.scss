@@ -1,0 +1,84 @@
+.presentation-card {
+  border: $primary;
+}
+
+.card {
+  border: 3px solid $primary;
+  border-radius: 0.25rem;
+}
+
+.lobby-card {
+  padding: 3%;
+  border-radius: 30px;
+  box-shadow: $bg-shadow-small;
+  background-color: $card-bg;
+}
+
+.lobby-card:hover {
+  transform: scale(1.01);
+  cursor: pointer;
+}
+
+.card-large {
+  border-radius: 30px;
+  box-shadow: $bg-shadow-small;
+  background-color: $card-bg;
+  height: 50%;
+}
+
+.lobby-sidebar-card {
+  padding: 10%;
+  border-radius: 30px;
+  box-shadow: $bg-shadow-small;
+  background-color: $card-bg;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+  //border: 1px solid rgba(0, 0, 0, 0.125);
+  //border-radius: 0.25rem;
+}
+
+.presentation-card-image {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 15px;
+}
+
+.presentation-card-image-large {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 15px;
+}
+
+.anim-card-sm {
+  width: 75%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.client-card {
+  width: 5rem;
+  height: 5rem;
+  background-color: $gray-500;
+  border-radius: 15px;
+  box-shadow: $bg-shadow-small;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card-body {
+  text-align: left;
+  border: none;
+}
+
+.card-img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 25%;
+}

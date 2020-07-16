@@ -1,0 +1,46 @@
+$hamburger-size: 30px;
+
+@import "variables/variables";
+@import "variables/spacing";
+@import "variables/shadows";
+@import "variables/fonts";
+@import "variables/styling";
+@import "pages/packs";
+@import "pages/index";
+@import "pages/help";
+@import "pages/privacy_policy";
+@import "components/buttons";
+@import "components/header";
+@import "components/form";
+@import "components/footer";
+@import "components/overlay";
+@import "components/card";
+@import "components/product";
+@import "components/cookie_banner";
+@import "~delicious-hamburgers/scss/hamburgers";
+
+#app {
+  font-family: "Avenir LT Std Black", Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-weight: 300;
+  //overflow-x: hidden;
+}
+
+::selection {
+  background: $primary;
+}
+
+.page-section {
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.center-content {
+  justify-content: center;
+}

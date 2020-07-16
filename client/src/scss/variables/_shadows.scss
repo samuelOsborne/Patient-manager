@@ -1,0 +1,28 @@
+.bg-shadow-tiny {
+  box-shadow: $bg-shadow-tiny;
+}
+
+.bg-shadow-small {
+  box-shadow: $bg-shadow-small;
+}
+
+.bg-shadow-medium {
+  box-shadow: $bg-shadow-medium;
+}
+
+.bg-shadow-heavy {
+  box-shadow: $bg-shadow-heavy;
+}
+
+.bg-shadow-heaviest {
+  box-shadow: $bg-shadow-heaviest;
+}
+
+.bg-shadow-small-to-heavy {
+  box-shadow: $bg-shadow-small;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.bg-shadow-small-to-heavy:hover {
+  box-shadow: $bg-shadow-heavy;
+}

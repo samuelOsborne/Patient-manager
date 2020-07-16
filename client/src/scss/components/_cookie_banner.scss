@@ -1,0 +1,31 @@
+.cookie-banner {
+	text-align: center;
+	background-color: #a96ff4;
+	width: 100%;
+	position: fixed;
+	display: block;
+	align-items: center;
+	align-content: center;
+	bottom: 0px;
+	z-index: 100;
+	padding: 10px;
+	&--content {
+		display: flex;
+		color: white;
+		align-content: center;
+		align-items: center;
+		&--text {
+			font-size: 1rem;
+		}
+
+		&--buttons {
+			margin-left: auto;
+		}
+	}
+
+	&--hide {
+		transform: translate3d(0, 200px, 0);
+		-webkit-transform: translate3d(0, 200px, 0);
+		-webkit-transition: transform 1s ease;
+	}
+}

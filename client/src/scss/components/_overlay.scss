@@ -1,0 +1,77 @@
+.full-page-overlay {
+  &.show-overlay {
+    pointer-events: auto;
+    visibility: visible;
+    opacity: 1;
+  }
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 200;
+  will-change: opacity;
+  transition: opacity 1s;
+  top: 0;
+  right: 0;
+  background-color: $overlay-background;
+  overflow-x: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  a {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .a {font-size: 20px}
+    .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
+}
+
+.overlay-content {
+  font-weight: 600;
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+  @media screen and (max-width: 450px) {
+    top: 10%;
+  }
+}
+
+.overlay-link {
+  color: $overlay-button !important;
+  font-size: 2rem;
+  @media screen and (max-width: 450px) {
+    font-size: 20px;
+  }
+}
+
+.overlay-link-sm {
+  color: $overlay-button !important;
+  font-size: 1.7rem;
+  @media screen and (max-width: 450px) {
+    font-size: 20px;
+  }
+}
+
+.overlay-link:hover, .overlay-link:focus {
+  color: $overlay-button-hover !important;
+}
+
+.overlay-link-sm:hover, .overlay-link-sm:focus {
+  color: $overlay-button-hover !important;
+}

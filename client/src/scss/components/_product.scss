@@ -1,0 +1,93 @@
+.product-image {
+	border-radius: 15px;
+	padding: 10px;
+	width: 75%;
+}
+
+.round-border {
+	border-radius: 15px;
+}
+
+.product-test {
+	border-radius: 15px;
+	width: 20rem;
+	height: 20rem;
+}
+
+.product-description {
+
+}
+
+.color-switch {
+	width: 1rem;
+	height: 1rem;
+	background-color: #2bffc6;
+	border-radius: 30px;
+	margin-left: 30px;
+	cursor: pointer;
+	&__gray {
+		@extend .color-switch;
+		background-color: #374042;
+	}
+	&__red {
+		@extend .color-switch;
+		background-color: #ff406b;
+	}
+	&__green {
+		@extend .color-switch;
+		background-color: #00d18c;
+	}
+	&__blue {
+		@extend .color-switch;
+		background-color: #3391f5;
+	}
+}
+
+.arrow-button:hover {
+	cursor: pointer;
+	border-radius: 30px;
+	//background-color: $gray-200;
+	//box-shadow: $bg-shadow-tiny;
+	text-align: center;
+	//transition: box-shadow 0.1s  ease-in-out;
+	//transition: background-color 0.5s ease-in-out;
+}
+
+.right-button {
+
+}
+
+.red-filter {
+	filter: invert(36%) sepia(54%) saturate(2521%) hue-rotate(323deg) brightness(102%) contrast(101%);
+}
+
+.green-filter {
+	filter: invert(67%) sepia(68%) saturate(3945%) hue-rotate(120deg) brightness(98%) contrast(104%);
+}
+
+.blue-filter {
+	filter: invert(48%) sepia(38%) saturate(1288%) hue-rotate(176deg) brightness(98%) contrast(96%);
+}
+
+.white-filter {
+	filter: invert(100%) sepia(7%) saturate(265%) hue-rotate(4deg) brightness(118%) contrast(100%);
+}
+
+.disabled-filter {
+	filter: invert(48%) sepia(1%) saturate(804%) hue-rotate(321deg) brightness(104%) contrast(86%);
+	cursor: default;
+	pointer-events: none;
+}
+
+.toaster {
+	background-color: $primary;
+	color: $white;
+}
+
+.modal-title {
+	text-align: center;
+}
+
+.modal-body {
+	text-align: center;
+}
