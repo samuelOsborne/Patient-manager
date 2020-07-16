@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-var URL = process.env.URL || 'mongodb://localhost/patient_db';
+var URL = 'mongodb://mongo/patient_db';
 
 mongoose.set('useCreateIndex', true);
 
