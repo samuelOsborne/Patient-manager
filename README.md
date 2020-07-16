@@ -22,6 +22,8 @@ Patients contain :
     
  # Screenshots
  
- ![patient-sense] (https://github.com/samuelOsborne/Patient-manager/blob/master/images/patient-sense-add-user.png?raw=true)
+ ![patient-sense](https://github.com/samuelOsborne/Patient-manager/blob/master/images/patient-sense.png?raw=true)
  
- ![patient-sense-add-user] (https://github.com/samuelOsborne/Patient-manager/blob/master/images/patient-sense.png?raw=true)
+ ![patient-sense-add-user](https://github.com/samuelOsborne/Patient-manager/blob/master/images/patient-sense-add-user.png?raw=true)
+ 
+ 
