@@ -15,7 +15,7 @@
     "delicious-hamburgers": "^1.0.1",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
-    "socket.io": "^2.3.0",
+    "socket.io": "^2.4.0",
     "vue": "^2.6.11",
     "vue-axios": "^2.1.5",
     "vue-router": "^3.3.4",
